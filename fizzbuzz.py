@@ -48,7 +48,7 @@ n = int(input("How many numbers shall we print? "))
 f = int(input("For multiples of what number shall we print 'Fizz'? "))
 b = int(input("For multiples of what number shall we print 'Buzz'? "))
 for x in range(1, n+1):
-    if (x%(f*b))==0:
+    if (x%f==0 and x%b==0):
         print("FizzBuzz")
     elif (x%b)==0:
         print("Buzz")
